@@ -286,3 +286,35 @@ section {
     background-color: #121212;
     color: white !important;
 }
+
+.listed-tools {
+  /* 1. Reset spacing */
+  padding-left: 20px; /* Space for the bullets */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  /* 2. Force alignment to the left */
+  text-align: left;
+  list-style-type: disc;
+  
+  /* 3. The magic fix: ensures the list block doesn't 
+     stretch and get centered by the parent container */
+  width: fit-content; 
+  margin-left: 0; 
+}
+
+/* Note: Use both classes to ensure it matches your HTML */
+ul.listed.tools {
+    list-style-type: disc;     /* Ensures bullets are visible */
+    list-style-position: outside; /* Keeps bullets in a neat line */
+    padding-left: 20px;        /* Creates space for the bullet to sit */
+    text-align: left;          /* Forces text to the left */
+    width: fit-content;        /* CRITICAL: Shrinks the box so bullets move to the text */
+    margin-left: 0;            /* Aligns the whole block to the left */
+}
+
+ul.listed.tools li {
+    display: list-item;        /* Ensures it behaves like a standard list */
+    margin-bottom: 8px;        /* Adds a little breathing room between items */
+    color: #121212;            /* Matches your main text color */
+}

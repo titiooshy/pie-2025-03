@@ -51,11 +51,21 @@
     
         <section id="process-content" class="white-content-block">
             <h1 class="block-title">SOFTWARE</h1>
-            
-            <p class="description-text">
-                Get to know us, the team.
-            </p>
 
             <div class="block-image-container">
+                <img src="software placeholder.jpg" alt="Software Stuff" >
                 </div>
+
+            <h3 class="bold body">Code System Notes</h3>  
+            <ul class="listed tools">
+                <li>Here is Our <a href="https://github.com/titiooshy/fitbot-final">GitHub Repo</a></li>
+                <li>We used Arduino IDE to write out the program: The Screen UI and the sensor communication using the Arduino Nano ESP-32</li>
+                <li>The main code to run our program is <a href="https://github.com/titiooshy/fitbot-final/blob/main/Arduino%20Code/improved-heart.ino">Here</a></li>
+                <li>Essentially what the code does is that it runs the entire FitBot system on a file called improved_heart.ino, on the Arduino ESP32 that reads heart-rate data from an analog pulse sensor, calculates BPM in real time, and gives audio alerts if the heart rate is unsafe. It displays the time, heart rate, and workout progress on an OLED screen, automatically cycling between screens. It also connects to WiFi to sync time, manages work and cooldown workout intervals, plays buzzer tones on each heartbeat and during alerts, and replaces the MAX30102 with custom analog beat-detection logic to keep everything lightweight and self-contained.</li>
+
+            
+            <h3 class="bold body">Website Design</h3> 
+            <p class="my_words">
+                The overall website design was created using HTML, CSS, and JavaScript. It was then launched into GitHub Pages as final submission.
+            </p>
         </section>
